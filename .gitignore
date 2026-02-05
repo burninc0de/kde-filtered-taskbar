@@ -1,0 +1,41 @@
+# Qt
+*.pro.user
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+Makefile*
+*build-*
+
+# Qt Creator
+*.autosave
+
+# Qt Linguist
+*.qm
+*.ts
+
+# KDE
+.directory
+CMakeLists.txt.user
+
+# Build directories
+build/
+build-*/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
