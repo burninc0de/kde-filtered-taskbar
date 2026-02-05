@@ -19,6 +19,12 @@ echo "Installing Filtered Taskbar widget..."
 # Create plasmoids directory if it doesn't exist
 mkdir -p "$HOME/.local/share/plasma/plasmoids"
 
+# Remove existing widget if it exists
+if [ -d "$WIDGET_DIR" ]; then
+    echo "Removing existing widget installation..."
+    rm -rf "$WIDGET_DIR"
+fi
+
 # Copy widget files
 cp -r "$WIDGET_ID" "$WIDGET_DIR"
 
